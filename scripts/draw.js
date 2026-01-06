@@ -15,16 +15,19 @@ function draw(canvas) {
     isDrawing = true;
 
     const coords = getCanvasCoordinates(canvas, e);
-    ctx.beginPath();
+    lastX = coords.x;
+    lastY = coords.y;
+
     ctx.strokeStyle = "black";
     ctx.lineWidth = 5;
     ctx.lineCap = "round";
     ctx.lineJoin = "round";
     ctx.imageSmoothingEnabled = true;
-    ctx.moveTo(coords.x, coords.y);
-    lastX = coords.x;
-    lastY = coords.y;
-    console.log("Started Drawing");
+
+    ctx.beginPath();
+    ctx.arc(lastX, lastY, ctx.lineWidth / 2, 0, Math.PI * 2);
+    ctx.fillStyle = ctx.strokeStyle;
+    ctx.fill();
   });
 
   canvas.addEventListener("mousemove", (e) => {
@@ -42,12 +45,10 @@ function draw(canvas) {
 
   canvas.addEventListener("mouseup", () => {
     isDrawing = false;
-    console.log("Stopped drawing");
   });
 
   canvas.addEventListener("mouseleave", () => {
     isDrawing = false;
-    console.log("Stopped drawing");
   });
 }
 
