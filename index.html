@@ -7,6 +7,29 @@
     <title>Drawing Board</title>
   </head>
   <body>
+    <div class="container">
+      <div class="content-container">
+        <div class="upper-toolbar">
+          <div class="upper-nav">
+            <button class="new-canvas-btn btn">New Canvas</button>
+            <button class="save-as-jpg btn">Save as JPG</button>
+            <button class="save-as-png btn">Save as PNG</button>
+          </div>
+        </div>
+        <div class="bottom-side">
+          <div class="sidebar-container">
+            <div class="toolbar-container">
+              <button class="brush-btn btn">Brush</button>
+              <button class="eraser-btn btn">Eraser</button>
+              <input type="color" class="color-input" />
+            </div>
+          </div>
+          <div class="canvas-container">
+            <canvas id="mainCanvas" width="1200" height="700"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="./scripts/main.js" type="module"></script>
   </body>
 </html>
