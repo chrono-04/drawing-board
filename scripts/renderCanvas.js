@@ -9,9 +9,11 @@ function renderCanvas() {
 
   const canvas = document.createElement("canvas");
   canvas.setAttribute("id", "mainCanvas");
-  canvas.setAttribute("width", "1280");
-  canvas.setAttribute("height", "720");
+  canvas.width = 1280;
+  canvas.height = 720;
   canvasContainer.appendChild(canvas);
+
+  console.log(canvas.width, canvas.height);
 
   draw(canvas);
 }
