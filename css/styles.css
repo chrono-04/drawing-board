@@ -19,6 +19,11 @@ body {
   color: white;
 }
 
+.canvas-option-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .canvas-container {
   display: flex;
   justify-content: center;

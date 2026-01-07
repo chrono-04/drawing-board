@@ -9,4 +9,5 @@ brushSizeInput.addEventListener("input", () => {
   brushSizeEl.textContent = `Brush Size: ${brushSizeInput.value}`;
 });
 
+brushSizeEl.textContent = `Brush Size: ${brushSizeInput.value}`;
 renderCanvas();

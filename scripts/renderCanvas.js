@@ -1,5 +1,7 @@
 import { draw } from "./draw.js";
 
+const saveCanvasBtn = document.querySelector(".save-canvas-size-btn");
+
 function renderCanvas() {
   const canvasContainer = document.querySelector(".canvas-container");
 
@@ -16,6 +18,8 @@ function renderCanvas() {
   console.log(canvas.width, canvas.height);
 
   draw(canvas);
+  canvasWidth.value = "";
+  canvasHeight.value = "";
 }
 
 export { renderCanvas };
