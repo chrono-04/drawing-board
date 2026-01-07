@@ -7,6 +7,7 @@ function getCanvasCoordinates(canvas, event) {
 
 function draw(canvas) {
   const ctx = canvas.getContext("2d");
+  ctx.imageSmoothingEnabled = true;
 
   let isDrawing = false;
   let lastX, lastY;
