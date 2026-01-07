@@ -1,3 +1,5 @@
+import { setCursor } from "./cursor.js";
+
 const brushSize = document.getElementById("brushSize");
 const brushColor = document.getElementById("brushColor");
 
@@ -53,6 +55,12 @@ function draw(canvas) {
 
   canvas.addEventListener("mouseleave", () => {
     isDrawing = false;
+    document.body.style.cursor = "default";
+  });
+
+  canvas.addEventListener("mouseenter", () => {
+    console.log("mouse has entered the canvas");
+    setCursor(Number(brushSize.value));
   });
 }
 
