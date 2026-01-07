@@ -1,3 +1,6 @@
+const brushSize = document.getElementById("brushSize");
+const brushColor = document.getElementById("brushColor");
+
 function getCanvasCoordinates(canvas, event) {
   const rect = canvas.getBoundingClientRect();
   const x = event.clientX - rect.left;
@@ -19,8 +22,8 @@ function draw(canvas) {
     lastX = coords.x;
     lastY = coords.y;
 
-    ctx.strokeStyle = "black";
-    ctx.lineWidth = 5;
+    ctx.strokeStyle = brushColor.value;
+    ctx.lineWidth = Number(brushSize.value);
     ctx.lineCap = "round";
     ctx.lineJoin = "round";
     ctx.imageSmoothingEnabled = true;

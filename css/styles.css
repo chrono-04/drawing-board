@@ -8,90 +8,27 @@ body {
   height: 100vh;
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-.container {
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-}
-
-.content-container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.btn {
-  padding: 15px 20px;
-  border: none;
-  border-radius: 10px;
-  background-color: #3481ff;
-  color: white;
-  font-size: 14px;
-  font-weight: 700;
-  transition: 150ms ease-in-out;
-}
-
-.btn:hover {
-  background-color: #2a67cc;
-}
-
-.btn:active {
-  background-color: #3481ff;
-}
-
-.upper-toolbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 0;
-}
-
-.upper-nav {
-  background-color: #ebebf4;
-  padding: 10px 20px;
-  border-radius: 10px;
-}
-
-.upper-nav > button {
-  margin: 0px 10px;
-}
-
-.bottom-side {
-  display: flex;
-  height: 100%;
-}
-
-.sidebar-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 10px;
+  background-color: #3c3d44;
 }
 
 .toolbar-container {
-  display: flex;
-  flex-direction: column;
-  padding: 20px 10px;
-  border-radius: 15px;
-  background-color: #ebebf4;
-}
-
-.toolbar-container > button {
-  margin: 10px 0;
-}
-
-.canvas-container {
-  flex: 1;
+  padding: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ebebf4;
-  border-radius: 15px;
+  color: white;
+}
+
+.canvas-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid darkcyan;
+  padding: 20px;
 }
 
 #mainCanvas {
   background-color: white;
+  min-width: 300px;
+  min-height: 300px;
 }
