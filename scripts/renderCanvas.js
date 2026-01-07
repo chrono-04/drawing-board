@@ -1,7 +1,5 @@
 import { draw } from "./draw.js";
 
-const saveCanvasBtn = document.querySelector(".save-canvas-size-btn");
-
 function renderCanvas() {
   const canvasContainer = document.querySelector(".canvas-container");
 
